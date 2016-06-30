@@ -10,6 +10,12 @@ class Lesson extends Model
         'title',
         'content',
         'views',
-        'difficulty'
+        'difficulty',
+        'length'
     ];
+
+    public function scopeFilter($query, QueryFilter $filters)
+    {
+    	return $filters->apply($query);
+    }
 }

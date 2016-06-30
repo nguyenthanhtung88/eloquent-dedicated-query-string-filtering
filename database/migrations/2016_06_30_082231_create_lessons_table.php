@@ -17,6 +17,7 @@ class CreateLessonsTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->integer('views');
+            $table->integer('length');
             $table->string('difficulty');
             $table->timestamps();
         });
