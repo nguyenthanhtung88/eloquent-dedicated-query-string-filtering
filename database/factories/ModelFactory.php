@@ -25,6 +25,7 @@ $factory->define(App\Lesson::class, function (Faker\Generator $faker) {
         'title' => $faker->sentence(),
         'content' => $faker->text(),
         'views' => $faker->numberBetween(1000, 9000),
-        'difficulty' => $faker->randomElement(['beginner', 'advanced', 'intermediate'])
+        'difficulty' => $faker->randomElement(['beginner', 'advanced', 'intermediate']),
+        'length' => $faker->numberBetween(100, 900)
     ];
 });
